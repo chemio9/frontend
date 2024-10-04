@@ -31,18 +31,27 @@ import { Mail } from "lucide-vue-next"
     </div>
   </main>
 
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima placeat, quam quo, nobis maiores officiis
-      quis dicta explicabo totam incidunt accusamus nam sunt similique suscipit, minus laborum alias. Expedita,
-      voluptatem?
-      <a href="">link to</a>
-    </p>
+  <p>原子信息社创立于2024年，是由一群对信息技术充满热情的潮阳实验学校普宁校区学生组成的社团。我们不仅仅是编程爱好者，我们是技术的探索者，是创新的实践者。包含技术组、协同组两个部门。两个部门各司其职，共同组成了原子信息社。</p>
+  <ul>
+    <li>
+      技术提升：与志同道合的伙伴一起，你的技术将得到飞速提升。
+    </li>
+    <li>
+      项目经验：参与实际项目，让你的简历更加丰富。
+    </li>
+    <li>
+      思维碰撞：与高手过招，激发你的创新思维。
+    </li>
+  </ul>
 </template>
 
 <style scoped>
-
 main {
   margin: 2rem;
+  padding: 2rem;
+}
+p, ul{
+  font-size: 1.2rem;
 }
 
 .divider {

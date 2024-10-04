@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
@@ -7,7 +8,10 @@ import { RouterLink, RouterView } from 'vue-router'
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/about">About</RouterLink>
   </nav>
-  <RouterView />
+  <div class="view">
+    <RouterView />
+  </div>
+  <Footer></Footer>
 </template>
 
 <style scoped>
@@ -16,11 +20,14 @@ import { RouterLink, RouterView } from 'vue-router'
   margin: 0 auto 2rem;
 }
 
+.view {
+  padding: 2rem;
+}
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 1rem;
   text-align: center;
-  margin-top: 2rem;
+  padding: 2rem 2rem 0 2rem;
 }
 
 nav a.router-link-exact-active {
