@@ -50,7 +50,9 @@ main {
   margin: 2rem;
   padding: 2rem;
 }
-p, ul{
+
+p,
+ul {
   font-size: 1.2rem;
 }
 

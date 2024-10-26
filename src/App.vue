@@ -23,6 +23,7 @@ import Footer from '@/components/Footer.vue'
 .view {
   padding: 2rem;
 }
+
 nav {
   width: 100%;
   font-size: 1rem;

@@ -71,12 +71,11 @@ body {
     BlinkMacSystemFont,
     'Helvetica Neue',
     PingFang SC,
-
     'Noto Sans',
     'Microsoft Yahei',
     'Segoe UI',
-
     sans-serif;
+
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

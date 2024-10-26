@@ -23,12 +23,10 @@ main {
   width: 5rem;
   height: 5rem;
   display: block;
-
 }
 
 .introduction h1,
 .introduction i {
-
   text-align: center;
 }
 
@@ -41,10 +39,11 @@ main {
   main {
     margin: 1rem 0;
   }
-.overview {
-  width: 90%;
 
-}
+  .overview {
+    width: 90%;
+  }
+
   .about h1 {
     display: block;
   }
