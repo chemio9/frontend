@@ -5,29 +5,23 @@
         <n-menu style="width: auto;" mode="horizontal" responsive :options="menuOptions" />
       </n-flex>
     </nav>
+    <div class="view">
+      <RouterView />
+    </div>
+    <Footer></Footer>
   </n-config-provider>
-  <div class="view">
-    <RouterView />
-  </div>
-  <Footer></Footer>
 </template>
 <script setup lang="ts">
-// TODO: use auto-import, this is annoying
-
-import { RouterLink, RouterView } from 'vue-router'
-import Footer from '@/components/Footer.vue'
-import { NConfigProvider, NGlobalStyle, GlobalThemeOverrides, darkTheme, useOsTheme, zhCN, dateZhCN } from 'naive-ui'
-import type { Component } from 'vue'
-import { h, computed } from 'vue'
-import { NMenu, NFlex } from 'naive-ui'
-import type { MenuOption } from 'naive-ui'
+import { darkTheme, useOsTheme, zhCN, dateZhCN } from 'naive-ui'
+import type { GlobalThemeOverrides, MenuOption } from "naive-ui"
+import { RouterLink } from 'vue-router';
 
 let osThemeRef = useOsTheme()
 let theme = computed(() => (osThemeRef.value === 'dark' ? darkTheme : null))
 
 const themeOverrides: GlobalThemeOverrides = {
   common: {
-    primaryColor: "#61A2CCFF",
+    primaryColor: "#42d4fdff",
     primaryColorHover: "#99DDE8FF",
     primaryColorPressed: "#3F5D7AFF",
     primaryColorSuppl: "#6D83AEFF"
