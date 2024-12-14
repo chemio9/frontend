@@ -1,8 +1,13 @@
 <template>
-  <n-config-provider :theme :locale="zhCN" :date-locale="dateZhCN" :theme-overrides="themeOverrides">
+  <n-config-provider
+    :theme
+    :locale="zhCN"
+    :date-locale="dateZhCN"
+    :theme-overrides="themeOverrides"
+  >
     <nav>
       <n-flex justify="center">
-        <n-menu style="width: auto;" mode="horizontal" responsive :options="menuOptions" />
+        <n-menu style="width: auto" mode="horizontal" responsive :options="menuOptions" />
       </n-flex>
     </nav>
     <div class="view">
@@ -13,19 +18,19 @@
 </template>
 <script setup lang="ts">
 import { darkTheme, useOsTheme, zhCN, dateZhCN } from 'naive-ui'
-import type { GlobalThemeOverrides, MenuOption } from "naive-ui"
-import { RouterLink } from 'vue-router';
+import type { GlobalThemeOverrides, MenuOption } from 'naive-ui'
+import { RouterLink } from 'vue-router'
 
 let osThemeRef = useOsTheme()
 let theme = computed(() => (osThemeRef.value === 'dark' ? darkTheme : null))
 
 const themeOverrides: GlobalThemeOverrides = {
   common: {
-    primaryColor: "#42d4fdff",
-    primaryColorHover: "#99DDE8FF",
-    primaryColorPressed: "#3F5D7AFF",
-    primaryColorSuppl: "#6D83AEFF"
-  }
+    primaryColor: '#42d4fdff',
+    primaryColorHover: '#99DDE8FF',
+    primaryColorPressed: '#3F5D7AFF',
+    primaryColorSuppl: '#6D83AEFF',
+  },
 }
 
 const menuOptions: MenuOption[] = [
@@ -36,9 +41,9 @@ const menuOptions: MenuOption[] = [
         {
           to: {
             name: 'home',
-          }
+          },
         },
-        { default: () => 'Home' }
+        { default: () => 'Home' },
       ),
     key: 'go-back-home',
   },
@@ -49,12 +54,25 @@ const menuOptions: MenuOption[] = [
         {
           to: {
             name: 'about',
-          }
+          },
         },
-        { default: () => 'About' }
+        { default: () => 'About' },
       ),
     key: 'go-about',
-  }
+  },
+  {
+    label: () =>
+      h(
+        RouterLink,
+        {
+          to: {
+            name: 'profile',
+          },
+        },
+        { default: () => 'Profiles' },
+      ),
+    key: 'go-profiles',
+  },
 ]
 </script>
 

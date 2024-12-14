@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <footer>
-    <p>Developed with ❤️ by <a href="https://github.com/chemio9">Chemio9</a>. </p>
+    <p>Developed with ❤️ by <a href="https://github.com/chemio9">Chemio9</a>.</p>
     <p>Copyright (c) 2024 Atom Club chengruichen3<sup>AT</sup>gmail.com</p>
   </footer>
 </template>

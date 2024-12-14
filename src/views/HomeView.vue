@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Logo from "@/assets/logo.svg"
-import GithubIcon from "@/assets/Github_Logo.svg"
-import BiliIcon from "@/assets/BiliBili_TV_Icon.svg"
-import { Mail } from "lucide-vue-next"
+import Logo from '@/assets/logo.svg'
+import BiliIcon from '@/assets/BiliBili_TV_Icon.svg'
+
+import { LogoGithub, MailOutline } from '@vicons/ionicons5'
 </script>
 
 <template>
@@ -20,28 +20,23 @@ import { Mail } from "lucide-vue-next"
             <BiliIcon class="bili"></BiliIcon>
           </a>
           <a href="mailto:chengruichen3@gmail.com">
-            <Mail></Mail>
+            <MailOutline></MailOutline>
           </a>
           <a href="https://github.com/atomclub">
-            <GithubIcon viewBox="0 0 25 25" stroke="currentColor" fill="currentColor"></GithubIcon>
+            <LogoGithub></LogoGithub>
           </a>
         </div>
-
       </div>
     </div>
   </main>
 
-  <p>原子信息社创立于2024年，是由一群对信息技术充满热情的潮阳实验学校普宁校区学生组成的社团。我们不仅仅是编程爱好者，我们是技术的探索者，是创新的实践者。包含技术组、协同组两个部门。两个部门各司其职，共同组成了原子信息社。</p>
+  <p>
+    原子信息社创立于2024年，是由一群对信息技术充满热情的潮阳实验学校普宁校区学生组成的社团。我们不仅仅是编程爱好者，我们是技术的探索者，是创新的实践者。包含技术组、协同组两个部门。两个部门各司其职，共同组成了原子信息社。
+  </p>
   <ul>
-    <li>
-      技术提升：与志同道合的伙伴一起，你的技术将得到飞速提升。
-    </li>
-    <li>
-      项目经验：参与实际项目，让你的简历更加丰富。
-    </li>
-    <li>
-      思维碰撞：与高手过招，激发你的创新思维。
-    </li>
+    <li>技术提升：与志同道合的伙伴一起，你的技术将得到飞速提升。</li>
+    <li>项目经验：参与实际项目，让你的简历更加丰富。</li>
+    <li>思维碰撞：与高手过招，激发你的创新思维。</li>
   </ul>
 </template>
 
@@ -100,7 +95,7 @@ ul {
 }
 
 .links a svg.bili {
-  color: rgb(0 179 250);
+  color: #00b3fa;
 }
 
 @media screen and (max-width: 700px) {
@@ -122,8 +117,6 @@ ul {
     width: 5rem;
     height: 5rem;
     display: block;
-
   }
-
 }
 </style>

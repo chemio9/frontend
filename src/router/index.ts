@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
     },
     {
       path: '/about',
@@ -15,9 +15,29 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }
-  ]
+      component: () => import('../views/AboutView.vue'),
+    },
+    {
+      // https://router.vuejs.org/guide/essentials/nested-routes.html#Omitting-parent-components-
+      path: '/profile',
+      children: [
+        {
+          path: '',
+          name: 'profile',
+          // route level code-splitting
+          // this generates a separate chunk (About.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () => import('../views/ProfilesView.vue'),
+        },
+        {
+          path: '/:user',
+          name: 'profile-user',
+          component: () => import('@/views/UserProfileView.vue'),
+          props: true,
+        },
+      ],
+    },
+  ],
 })
 
 export default router
