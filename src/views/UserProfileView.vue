@@ -34,7 +34,14 @@ import logo from '../assets/logo.svg?url'
 import { LogoGithub } from '@vicons/ionicons5'
 </script>
 <style scoped>
+@media screen and (min-width: 800px) {
+  main {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
 main {
-  padding: 0 6rem;
+  padding: 0.5rem;
+  margin: 2rem 0;
 }
 </style>

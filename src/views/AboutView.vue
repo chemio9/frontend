@@ -2,13 +2,13 @@
   <main class="about">
     <div class="overview">
       <div class="introduction">
-        <h1 class="name">原子信息社</h1>
-        <p>
+        <n-h1 class="name">原子信息社</n-h1>
+        <n-p>
           原子信息社由一群爱好者创立于2024年，<br />
           我们是爱好者，更是探索者。 <br />
           我们探索计算的无限可能， <br />
           为着无法计算的价值。
-        </p>
+        </n-p>
       </div>
     </div>
   </main>

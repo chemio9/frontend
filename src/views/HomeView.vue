@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Logo from '@/assets/logo.svg'
 import BiliIcon from '@/assets/BiliBili_TV_Icon.svg'
+import { NP, NUl, NLi, NA } from 'naive-ui'
 
 import { LogoGithub, MailOutline } from '@vicons/ionicons5'
 </script>
@@ -13,42 +14,37 @@ import { LogoGithub, MailOutline } from '@vicons/ionicons5'
       </div>
       <div class="divider"></div>
       <div class="introduction">
-        <h1 class="name">原子信息社</h1>
+        <n-h1 class="name">原子信息社</n-h1>
         <i>ATOM IT CLUB</i>
         <div class="links">
-          <a href="https://bilibili.com">
+          <n-a href="https://bilibili.com">
             <BiliIcon class="bili"></BiliIcon>
-          </a>
-          <a href="mailto:chengruichen3@gmail.com">
+          </n-a>
+          <n-a href="mailto:chengruichen3@gmail.com">
             <MailOutline></MailOutline>
-          </a>
-          <a href="https://github.com/atomclub">
+          </n-a>
+          <n-a href="https://github.com/atomclub">
             <LogoGithub></LogoGithub>
-          </a>
+          </n-a>
         </div>
       </div>
     </div>
-  </main>
 
-  <p>
-    原子信息社创立于2024年，是由一群对信息技术充满热情的潮阳实验学校普宁校区学生组成的社团。我们不仅仅是编程爱好者，我们是技术的探索者，是创新的实践者。包含技术组、协同组两个部门。两个部门各司其职，共同组成了原子信息社。
-  </p>
-  <ul>
-    <li>技术提升：与志同道合的伙伴一起，你的技术将得到飞速提升。</li>
-    <li>项目经验：参与实际项目，让你的简历更加丰富。</li>
-    <li>思维碰撞：与高手过招，激发你的创新思维。</li>
-  </ul>
+    <n-p>
+      原子信息社创立于2024年，是由一群对信息技术充满热情的潮阳实验学校普宁校区学生组成的社团。我们不仅仅是编程爱好者，我们是技术的探索者，是创新的实践者。包含技术组、协同组两个部门。两个部门各司其职，共同组成了原子信息社。
+    </n-p>
+    <n-ul>
+      <n-li>技术提升：与志同道合的伙伴一起，你的技术将得到飞速提升。</n-li>
+      <n-li>项目经验：参与实际项目，让你的简历更加丰富。</n-li>
+      <n-li>思维碰撞：与高手过招，激发你的创新思维。</n-li>
+    </n-ul>
+  </main>
 </template>
 
 <style scoped>
 main {
   margin: 2rem;
   padding: 2rem;
-}
-
-p,
-ul {
-  font-size: 1.2rem;
 }
 
 .divider {

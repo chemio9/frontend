@@ -14,6 +14,7 @@
       <RouterView />
     </div>
     <Footer></Footer>
+    <n-global-style></n-global-style>
   </n-config-provider>
 </template>
 
@@ -57,7 +58,12 @@ const menuOptions: MenuOption[] = [
 }
 
 .view {
-  padding: 2rem;
+  padding: 0.75rem;
+}
+@media screen and (min-width: 800px) {
+  .view {
+    padding: 2rem;
+  }
 }
 
 nav {

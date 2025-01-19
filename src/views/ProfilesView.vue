@@ -37,7 +37,9 @@ let data = {
 }
 </script>
 <style scoped>
-main {
-  padding: 0 6rem;
+@media screen and (min-width: 800px) {
+  main {
+    padding: 0 6rem;
+  }
 }
 </style>
