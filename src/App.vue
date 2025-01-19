@@ -16,7 +16,8 @@
     <Footer></Footer>
   </n-config-provider>
 </template>
-<script setup lang="ts">
+
+<script setup lang="tsx">
 import { darkTheme, useOsTheme, zhCN, dateZhCN } from 'naive-ui'
 import type { GlobalThemeOverrides, MenuOption } from 'naive-ui'
 import { RouterLink } from 'vue-router'
@@ -35,42 +36,15 @@ const themeOverrides: GlobalThemeOverrides = {
 
 const menuOptions: MenuOption[] = [
   {
-    label: () =>
-      h(
-        RouterLink,
-        {
-          to: {
-            name: 'home',
-          },
-        },
-        { default: () => 'Home' },
-      ),
+    label: () => <RouterLink to={{ name: 'home' }}>Home</RouterLink>,
     key: 'go-back-home',
   },
   {
-    label: () =>
-      h(
-        RouterLink,
-        {
-          to: {
-            name: 'about',
-          },
-        },
-        { default: () => 'About' },
-      ),
+    label: () => <RouterLink to={{ name: 'about' }}>About</RouterLink>,
     key: 'go-about',
   },
   {
-    label: () =>
-      h(
-        RouterLink,
-        {
-          to: {
-            name: 'profile',
-          },
-        },
-        { default: () => 'Profiles' },
-      ),
+    label: () => <RouterLink to={{ name: 'profile' }}>Profiles</RouterLink>,
     key: 'go-profiles',
   },
 ]
